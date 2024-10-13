@@ -11,6 +11,8 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+      leading: IconButton(onPressed: () {}, icon: Icon(Icons.back_hand))),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Column(
