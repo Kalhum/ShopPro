@@ -30,9 +30,9 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
         child: Column(
           children: [
-            const Text(
-              "Login",
-              style: TextStyle(fontSize: 20),
+            Icon(
+              Icons.person,
+              size: 300,
             ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
@@ -67,12 +67,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () {
                           print("Login");
                         },
-                        child: const Text("Login"),
                         style: TextButton.styleFrom(
-                            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                            foregroundColor:
+                                const Color.fromARGB(255, 255, 255, 255),
                             backgroundColor: const Color.fromRGBO(0, 0, 0, 1),
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            padding: const EdgeInsets.symmetric(horizontal: 40),
                             textStyle: const TextStyle(fontSize: 15)),
+                        child: const Text("Login"),
                       )),
                 ),
               ],
@@ -87,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 Text("OR"),
-                const Expanded(
+                Expanded(
                   child: Divider(
                     color: Colors.grey,
                     thickness: 2,
